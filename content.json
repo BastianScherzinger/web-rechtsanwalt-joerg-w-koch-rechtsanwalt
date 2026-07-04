@@ -1,23 +1,107 @@
 {
-  "site_name": "Muster Handwerk",
-  "headline": "Handwerk, auf das Sie sich verlassen können",
-  "subline": "Qualität aus Ihrer Region — zuverlässig, sauber und termintreu.",
-  "akzent": "#c8102e",
-  "branche": "Handwerk",
-  "stadt": "",
+  "site_name": "Rechtsanwalt Jörg W. Koch Rechtsanwalt",
+  "branche": "Rechtsanwalt",
+  "stadt": "Berlin Spandau",
   "telefon": "",
   "email": "",
-  "adresse": "",
-  "ueber_titel": "Über uns",
-  "ueber_text": "Seit Jahren Ihr verlässlicher Partner in der Region. Wir verbinden traditionelles Handwerk mit moderner Ausführung.",
-  "leistungen": [
-    {"titel": "Beratung", "text": "Persönlich, ehrlich und auf Ihr Projekt zugeschnitten."},
-    {"titel": "Ausführung", "text": "Saubere, termintreue Arbeit mit Liebe zum Detail."},
-    {"titel": "Service", "text": "Auch nach Abschluss für Sie da — ein fester Ansprechpartner."}
+  "adresse": "Kurstr. 18 13585 Berlin (Spandau)",
+  "akzent": "#007BFF",
+  "fotos": [
+    "/static/img/gal_ph1.svg",
+    "/static/img/gal_ph2.svg",
+    "/static/img/gal_ph3.svg"
   ],
-  "fotos": [],
-  "cta_text": "Jetzt unverbindlich anfragen",
-  "seo_title": "Muster Handwerk",
-  "seo_desc": "Qualität aus Ihrer Region.",
-  "jahr": 2026
+  "hero_image": "/static/img/hero.png",
+  "headline": "Rechtsschutz für Spandau",
+  "subline": "Schnelle und zuverlässige Rechtsberatung in Berlin.",
+  "ueber_titel": "Vertrauenswürdiger Rechtsbeistand in Spandau",
+  "ueber_text": "Rechtsanwalt Jörg W. Koch hat seit über zehn Jahren in Spandau, Berlin, erfolgreich als Anwalt gearbeitet. Seine Erfahrung und Kenntnis im Bereich des Vertrags-, Familien- und Immobilienrechts sind unbestritten. Er ist bekannt für seine persönliche Betreuung der Mandanten und den Fokus auf die individuellen Bedürfnisse seiner Kunden.",
+  "leistungen": [
+    {
+      "titel": "Vertragsrecht",
+      "text": "Schnelle und präzise Rechtsberatung zu Vertragsfragen."
+    },
+    {
+      "titel": "Familienrecht",
+      "text": "Persönliche Unterstützung bei Scheidungs- und Unterhaltsstreitigkeiten."
+    },
+    {
+      "titel": "Immobilienrecht",
+      "text": "Effektive Begleitung von Immobilienkaufverträgen."
+    },
+    {
+      "titel": "Arbeitsrecht",
+      "text": "Sicherstellung der Rechte im Arbeitsverhältnis durch rechtzeitige Beratung."
+    },
+    {
+      "titel": "Verwaltungsrecht",
+      "text": "Behandlung von Verwaltungsbeschwerden und Klagen."
+    },
+    {
+      "titel": "Schadensersatzansprüche",
+      "text": "Effektive Beweiserhebung und Klageverfolgung für Schadensersatzansprüche."
+    }
+  ],
+  "cta_text": "Jetzt Termin vereinbaren",
+  "seo_title": "Jörg W. Koch Rechtsanwalt Spandau",
+  "seo_desc": "Rechtsanwalt Jörg W. Koch in Berlin-Spandau bietet qualitativ hochwertige juristische Beratungen.",
+  "jahr": 2026,
+  "rechner": {
+    "titel": "Kostenrechner",
+    "untertitel": "Unverbindliche Sofort-Schätzung",
+    "posten": [
+      {
+        "name": "Erstberatung",
+        "ab": 100,
+        "bis": 250
+      },
+      {
+        "name": "Beratung (pro Stunde)",
+        "ab": 150,
+        "bis": 300
+      },
+      {
+        "name": "Vertretung (Richtwert)",
+        "ab": 500,
+        "bis": 3000
+      }
+    ],
+    "hinweis": "Grobe Orientierung — Ihr genaues, kostenloses Angebot erstellen wir nach kurzer Rücksprache."
+  },
+  "site_version": "1.0",
+  "font_display": "Playfair Display",
+  "font_body": "Source Sans 3",
+  "taste_applied": true,
+  "about_image": "/static/img/about_ph.svg",
+  "placeholder_images": true,
+  "faq": [
+    {
+      "frage": "Wie lange dauert ein Anwaltstermin?",
+      "antwort": "Ein Anwaltstermin kann je nach Thema zwischen einer halben Stunde bis zu zwei Stunden dauern."
+    },
+    {
+      "frage": "Was kostet eine Beratung bei Ihnen?",
+      "antwort": "Die Kosten für Rechtsberatungen variieren je nach Art und Umfang der Angelegenheit. Es wird ein individueller Tarif vereinbart."
+    },
+    {
+      "frage": "Bieten Sie auch Online-Beratungen an?",
+      "antwort": "Ja, wir bieten flexible Beratungsmöglichkeiten an, einschließlich Telekonsultationen."
+    },
+    {
+      "frage": "Wie lange dauert es bis ich einen Termin bekomme?",
+      "antwort": "Wir bemühen uns um eine schnelle Terminvereinbarung. In der Regel innerhalb von 2-3 Werktagen."
+    },
+    {
+      "frage": "Welche Gebühren sind bei Klagen zu erwarten?",
+      "antwort": "Die Kosten für Rechtsstreitigkeiten variieren stark und hängen von den Umständen ab. Ein individueller Tarif wird vereinbart."
+    }
+  ],
+  "trust": [
+    "Schnelle Terminvergabe",
+    "Individuelle Beratung",
+    "Erfahrung im Spandauer Raum",
+    "Flexibilität in der Konsultation",
+    "Persönliche Betreuung"
+  ],
+  "content_enriched": true
 }

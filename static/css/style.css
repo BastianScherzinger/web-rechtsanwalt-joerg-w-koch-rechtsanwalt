@@ -87,15 +87,16 @@ a{color:inherit;text-decoration:none}
 }
 .lead{
   font-size:clamp(1rem,1.6vw,1.2rem);color:var(--ink-soft);
-  margin:18px 0 28px;max-width:40ch;line-height:1.7
+  margin:20px 0 32px;max-width:44ch;line-height:1.72
 }
 .hero-cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
 
 /* ── Kostenrechner-Karte (Hero, rechte Spalte) ───────────────────────────── */
 .hero-rechner{
   background:rgba(255,255,255,.97);color:var(--ink);border-radius:var(--radius);
-  padding:clamp(16px,2vw,24px);box-shadow:0 22px 60px -20px rgba(0,0,0,.5);
-  display:grid;gap:14px;backdrop-filter:blur(2px);
+  padding:clamp(20px,2.5vw,32px);
+  box-shadow:0 4px 16px rgba(0,0,0,.06), 0 24px 56px -16px color-mix(in srgb,var(--accent) 28%,rgba(0,0,0,.42));
+  display:grid;gap:16px;backdrop-filter:blur(4px);align-self:center;
 }
 .hr-head{display:grid;gap:3px}
 .hr-title{font-family:"Fraunces",Georgia,serif;font-size:1.2rem;font-weight:700;line-height:1.15}
@@ -130,8 +131,8 @@ a{color:inherit;text-decoration:none}
 .hero-banner::before{
   content:"";position:absolute;inset:0;z-index:0;
   background:
-    linear-gradient(180deg, rgba(20,17,15,.25) 0%, rgba(20,17,15,.80) 100%),
-    radial-gradient(120% 90% at 25% 30%, rgba(20,17,15,.08), rgba(20,17,15,.50));
+    linear-gradient(105deg, rgba(10,18,30,.90) 0%, rgba(10,18,30,.62) 52%, rgba(10,18,30,.18) 100%),
+    linear-gradient(180deg, rgba(10,18,30,.06) 0%, rgba(10,18,30,.44) 100%);
 }
 .hero-banner .eyebrow{color:rgba(255,255,255,.92)}
 .hero-banner h1{color:#fff;text-shadow:0 2px 20px rgba(0,0,0,.30)}
@@ -148,10 +149,11 @@ a{color:inherit;text-decoration:none}
 
 /* Hero-Vertrauenssignale */
 .hero-trust{
-  list-style:none;display:flex;flex-wrap:wrap;gap:6px 20px;margin-top:24px;
-  font-size:13.5px;color:rgba(255,255,255,.88)
+  list-style:none;display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:22px;
+  font-size:13px;color:rgba(255,255,255,.80);
+  border-top:1px solid rgba(255,255,255,.15);padding-top:18px
 }
-.hero-plain .hero-trust{color:var(--ink-soft)}
+.hero-plain .hero-trust{color:var(--ink-soft);border-top-color:var(--line)}
 .hero-trust li{display:flex;align-items:center;gap:6px}
 
 /* ── Sektionen ───────────────────────────────────────────────────────────── */
@@ -160,19 +162,20 @@ a{color:inherit;text-decoration:none}
 .section-t{font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:6px;line-height:1.12}
 .section-lead{color:var(--ink-soft);font-size:1.05rem;max-width:56ch;margin-top:8px;line-height:1.7}
 .section-t + .section-lead{margin-top:10px}
-.section-lead + *{margin-top:32px}
-.section-t + *:not(.section-lead){margin-top:32px}
+.section-lead + *{margin-top:40px}
+.section-t + *:not(.section-lead){margin-top:36px}
 
 /* ── Leistungs-Grid ──────────────────────────────────────────────────────── */
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;align-items:stretch}
 .card{
   background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
   padding:28px 24px;box-shadow:var(--shadow);
-  transition:transform .2s ease-out, box-shadow .2s ease-out
+  transition:transform .22s ease-out, box-shadow .22s ease-out;
+  display:flex;flex-direction:column;
 }
-.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
-.card h3{font-size:1.15rem;margin-bottom:8px;margin-top:4px}
-.card p{color:var(--ink-soft);font-size:14.5px;line-height:1.65}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.card h3{font-size:1.1rem;margin-bottom:8px;margin-top:4px}
+.card p{color:var(--ink-soft);font-size:14.5px;line-height:1.65;flex:1}
 
 /* Leistungs-Icon */
 .card-ic{
@@ -203,8 +206,8 @@ a{color:inherit;text-decoration:none}
 .band-actions{display:flex;gap:12px;flex-wrap:wrap}
 
 /* ── Galerie ─────────────────────────────────────────────────────────────── */
-.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
-.g-item{border-radius:14px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.g-item{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3}
 .g-item img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease-out}
 .g-item:hover img{transform:scale(1.05)}
 
@@ -214,7 +217,7 @@ a{color:inherit;text-decoration:none}
 .about-photo,.ph-portrait{width:100%;aspect-ratio:4/5;border-radius:var(--radius);object-fit:cover}
 .about-cap{font-size:14px;color:var(--ink-soft);font-weight:600;text-align:center}
 .about-text{color:var(--ink-soft);font-size:1.05rem;max-width:60ch;line-height:1.75}
-.about-body .trust{margin:24px 0;grid-template-columns:repeat(3,1fr)}
+.about-body .trust{margin:24px 0;grid-template-columns:repeat(auto-fill,minmax(180px,1fr))}
 .ph{
   background:color-mix(in srgb,var(--accent) 7%,var(--surface));border:1px dashed var(--line);
   display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
@@ -223,13 +226,14 @@ a{color:inherit;text-decoration:none}
 .ph svg{width:34px;height:34px;opacity:.7}
 
 /* Trust-Signale */
-.trust{list-style:none;display:grid;gap:12px}
+.trust{list-style:none;display:grid;gap:10px}
 .trust li{
   background:var(--surface);border:1px solid var(--line);border-radius:12px;
-  padding:14px 16px;display:flex;flex-direction:column;gap:3px
+  padding:12px 16px;display:flex;flex-direction:row;align-items:center;gap:12px
 }
-.trust strong{font-size:14.5px}
-.trust span{font-size:13px;color:var(--ink-soft)}
+.trust-check{flex-shrink:0;color:var(--accent)}
+.trust strong{font-size:14.5px;white-space:nowrap}
+.trust span{font-size:14px;font-weight:500;color:var(--ink)}
 
 /* ── Team ────────────────────────────────────────────────────────────────── */
 .team-wrap{margin-top:clamp(36px,5vw,56px)}
@@ -249,6 +253,7 @@ a{color:inherit;text-decoration:none}
   display:flex;justify-content:space-between;align-items:baseline;gap:16px;
   border-bottom:1px solid var(--line);padding-bottom:10px;font-size:15px
 }
+.contact-list li:last-child{border-bottom:none;padding-bottom:0}
 .contact-list li span:first-child{color:var(--ink-soft);font-size:13.5px}
 .contact-list a{color:var(--accent);font-weight:600}
 .map{width:100%;height:220px;border:1px solid var(--line);border-radius:var(--radius);margin-top:8px}
